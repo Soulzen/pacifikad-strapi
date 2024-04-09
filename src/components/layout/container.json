@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_layout_containers",
+  "info": {
+    "displayName": "Container",
+    "icon": "archive",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext",
+      "required": false
+    },
+    "imageOnRight": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
+    }
+  }
+}

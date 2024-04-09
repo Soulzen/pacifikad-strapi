@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "Post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 150,
+      "unique": true
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    },
+    "textAndImage": {
+      "displayName": "Container",
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.container"
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
